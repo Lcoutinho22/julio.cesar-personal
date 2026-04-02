@@ -273,6 +273,31 @@ h2 {
   display: none;
 }
 
+.plans-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  padding: 10px 0 30px 0;
+}
+
+.plans-grid .plan-card {
+  max-width: 100%;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .plans-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .plans-grid .plan-card {
+    max-width: calc(50% - 15px);
+  }
+}
+
+
 .plan-card {
   min-width: 250px;
   width: 100%;
@@ -836,4 +861,19 @@ details.faq-item[open] .faq-question i {
 @media (max-width: 380px) {
   /* Extra media query cleanup, form-row-mobile covered above */
 }
+
+/* --- ANIMATION REVEAL ON SCROLL --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  visibility: hidden;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
 

@@ -52,7 +52,7 @@
             </div>
         </div>
 
-        <header class="profile-section">
+        <header class="profile-section reveal">
             <img src="./image/logo.jpg" alt="Julio Cesar" class="profile-img" width="180" height="180">
             <h1>JULIO CESAR</h1>
             <h2 data-i18n="prof_title">Personal Trainer</h2>
@@ -64,7 +64,7 @@
             <a href="#servicesTrack" class="btn-action" aria-label="Ver Planos"><i class="fas fa-dumbbell"></i> <span data-i18n="btn_plans">Planos</span></a>
         </nav>
 
-        <section class="about-section">
+        <section class="about-section reveal">
             <div class="section-header"><h3 data-i18n="about_title">Sobre o Personal</h3></div>
             <img src="./image/perfil.jpg" alt="Foto de Julio Cesar" class="about-img" width="120" height="120" loading="lazy">
             <div class="about-name">Julio Cesar</div>
@@ -76,7 +76,7 @@
             </div>
         </section>
 
-        <section aria-labelledby="online-title">
+        <section aria-labelledby="online-title" class="reveal">
             <div class="section-header"><h3 id="online-title" data-i18n="plan_online_title">Consultoria Online</h3></div>
             <div class="carousel-container">
                 <div class="carousel-track-manual" id="servicesOnline">
@@ -98,29 +98,68 @@
             </div>
         </section>
 
-        <section aria-labelledby="presencial-title">
+        <section aria-labelledby="presencial-title" class="reveal">
             <div class="section-header"><h3 id="presencial-title" data-i18n="plan_presential_title">Atendimento Presencial</h3></div>
-            <div class="carousel-container">
-                <div class="carousel-track-manual" id="servicesPresencial">
+            <div class="plans-grid" id="servicesPresencial">
                     
-                    <article class="plan-card glass-hover" style="border-color: var(--brand-green-light);">
-                        <div class="plan-name">Plano Presencial</div>
-                        <div class="plan-price" data-i18n="price_custom">A Combinar</div>
+                    <article class="plan-card glass-hover reveal" style="border-color: #cd7f32;">
+                        <div class="plan-name">Plano Bronze <br><span style="font-size: 0.8rem; font-weight: normal; font-style: normal; color: var(--text-secondary);">(2x na semana)</span></div>
+                        <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 15px; text-align: left;">Ideal para quem quer consistência e um acompanhamento próximo para garantir o progresso.</p>
+                        <div class="plan-price">R$ 560 <span>/mês</span></div>
                         <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> Total 8 aulas no mês (R$ 70/aula)</li>
                             <li><i class="fas fa-check"></i> <span data-i18n="feat_presential">Atendimento Presencial</span></li>
                             <li><i class="fas fa-check"></i> <span data-i18n="feat_biomechanics">Correção Biomecânica</span></li>
                             <li><i class="fas fa-check"></i> <span data-i18n="feat_motivation">Motivação Total</span></li>
-                            <li><i class="fas fa-check"></i> <span data-i18n="feat_gym">Academias & Condomínios</span></li>
                         </ul>
                         <div class="plan-btn" data-i18n="btn_select">Selecionar</div>
                     </article>
 
+                    <article class="plan-card glass-hover reveal" style="border-color: #c0c0c0;">
+                        <div class="plan-name">Plano Prata <br><span style="font-size: 0.8rem; font-weight: normal; font-style: normal; color: var(--text-secondary);">(3x na semana)</span></div>
+                        <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 15px; text-align: left;">Para quem está totalmente focado e quer uma transformação corporal mais rápida e intensa.</p>
+                        <div class="plan-price">R$ 840 <span>/mês</span></div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> Total 12 aulas no mês (R$ 70/aula)</li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="feat_presential">Atendimento Presencial</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="feat_biomechanics">Correção Biomecânica</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="feat_motivation">Motivação Total</span></li>
+                        </ul>
+                        <div class="plan-btn" data-i18n="btn_select">Selecionar</div>
+                    </article>
 
-                </div>
+                    <article class="plan-card glass-hover reveal" style="border-color: #ffd700;">
+                        <div class="plan-name">Plano Ouro <br><span style="font-size: 0.8rem; font-weight: normal; font-style: normal; color: var(--text-secondary);">(4x na semana)</span></div>
+                        <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 15px; text-align: left;">Para quem está totalmente focado e quer uma transformação corporal mais rápida e intensa.</p>
+                        <div class="plan-price">R$ 1120 <span>/mês</span></div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> Total 16 aulas no mês (R$ 70/aula)</li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="feat_presential">Atendimento Presencial</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="feat_biomechanics">Correção Biomecânica</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="feat_motivation">Motivação Total</span></li>
+                            <li style="color: #ffd700;"><i class="fas fa-gift"></i> <strong style="color: #ffd700;">Plano Alimentar Grátis</strong></li>
+                        </ul>
+                        <div class="plan-btn" data-i18n="btn_select">Selecionar</div>
+                    </article>
+
+                    <article class="plan-card glass-hover reveal" style="border-color: #9b59b6;">
+                        <div class="plan-name">Plano Plus <br><span style="font-size: 0.8rem; font-weight: normal; font-style: normal; color: var(--text-secondary);">(5x na semana)</span></div>
+                        <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 15px; text-align: left;">O acompanhamento definitivo. Máximo comprometimento para uma transformação completa de corpo e mente.</p>
+                        <div class="plan-price">R$ 1400 <span>/mês</span></div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> Total 20 aulas no mês (R$ 70/aula)</li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="feat_presential">Atendimento Presencial</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="feat_biomechanics">Correção Biomecânica</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="feat_motivation">Motivação Total</span></li>
+                            <li style="color: #9b59b6;"><i class="fas fa-gift"></i> <strong style="color: #9b59b6;">Plano Alimentar Grátis</strong></li>
+                        </ul>
+                        <div class="plan-btn" data-i18n="btn_select">Selecionar</div>
+                    </article>
+
             </div>
         </section>
 
-        <section class="faq-section" aria-labelledby="faq-title">
+        <section class="faq-section reveal" aria-labelledby="faq-title">
             <div class="section-header"><h3 id="faq-title" data-i18n="faq_title">Dúvidas Frequentes</h3></div>
             <div class="faq-container">
                 <details class="faq-item">
@@ -138,7 +177,7 @@
             </div>
         </section>
 
-        <section aria-labelledby="agendamento-title">
+        <section aria-labelledby="agendamento-title" class="reveal">
             <div class="section-header" style="margin-top: 30px;"><h3 id="agendamento-title">Agende sua Sessão</h3></div>
             <div class="schedule-form">
                 <div class="form-group">
