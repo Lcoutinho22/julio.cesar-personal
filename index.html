@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Julio Cesar | Personal Trainer</title>
+    <meta name="description" content="Consultoria fitness e personal trainer Julio Cesar. Resultados reais em emagrecimento e hipertrofia.">
+    <meta property="og:title" content="Julio Cesar | Personal Trainer">
+    <meta property="og:description" content="Consultoria fitness e personal trainer Julio Cesar. Resultados reais em emagrecimento e hipertrofia.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://juliocesarpersonal.com.br/">
+    <meta property="og:image" content="./image/logo.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <main class="glass-card">
+        
+        <!-- Controles de Topo -->
+        <div class="top-controls">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Alternar Tema"><i class="fas fa-sun"></i></button>
+            
+            <div class="lang-switcher">
+                <button class="lang-btn active" onclick="setLanguage('pt')">PT</button>
+                <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+                <button class="lang-btn" onclick="setLanguage('es')">ES</button>
+            </div>
+        </div>
+
+        <button class="share-toggle" onclick="toggleShareModal()" aria-label="Compartilhar"><i class="fas fa-share-alt"></i></button>
+
+        <div id="shareModal" class="share-modal">
+            <div class="share-content glass-effect">
+                <div class="share-header">
+                    <h4 data-i18n="share_title">Compartilhar</h4>
+                    <span class="close-share" onclick="toggleShareModal()">&times;</span>
+                </div>
+                <div class="share-options">
+                    <button onclick="shareLink('whatsapp')" class="share-btn whatsapp-btn"><i class="fab fa-whatsapp"></i></button>
+                    <button onclick="shareLink('facebook')" class="share-btn facebook-btn"><i class="fab fa-facebook-f"></i></button>
+                    <button onclick="shareLink('tiktok')" class="share-btn tiktok-btn"><i class="fab fa-tiktok"></i></button>
+                    <button onclick="shareLink('linkedin')" class="share-btn linkedin-btn"><i class="fab fa-linkedin-in"></i></button>
+                    <button onclick="shareLink('twitter')" class="share-btn twitter-btn"><i class="fab fa-twitter"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <header class="profile-section">
+            <img src="./image/logo.jpg" alt="Julio Cesar" class="profile-img" width="180" height="180">
+            <h1>JULIO CESAR</h1>
+            <h2 data-i18n="prof_title">Personal Trainer</h2>
+            <p class="bio-text" data-i18n="bio_text">Transforme seu corpo com metodologia focada em resultados reais. Especialista em Hipertrofia, Emagrecimento e Saúde.</p>
+        </header>
+
+        <nav class="action-grid">
+            <a href="https://wa.me/5551999999999" class="btn-action" aria-label="Falar no WhatsApp"><i class="fab fa-whatsapp"></i> <span data-i18n="btn_consulting">Consultoria</span></a>
+            <a href="#servicesTrack" class="btn-action" aria-label="Ver Planos"><i class="fas fa-dumbbell"></i> <span data-i18n="btn_plans">Planos</span></a>
+        </nav>
+
+        <section class="about-section">
+            <div class="section-header"><h3 data-i18n="about_title">Sobre o Personal</h3></div>
+            <img src="./image/perfil.jpg" alt="Foto de Julio Cesar" class="about-img" width="120" height="120" loading="lazy">
+            <div class="about-name">Julio Cesar</div>
+            <div class="about-text">
+                <p>Especialista em transformar resultados através da união entre Educação Física e Nutrição. Foco total em performance, estética e saúde.</p>
+                <p><strong>Treinamento Personalizado:</strong> Baseado em fisiologia e biomecânica.</p>
+                <p><strong>Consultoria Nutricional:</strong> Estratégias para hipertrofia e composição corporal.</p>
+                <p><strong>Performance:</strong> Evolução consistente com acompanhamento técnico.</p>
+            </div>
+        </section>
+
+        <section aria-labelledby="online-title">
+            <div class="section-header"><h3 id="online-title" data-i18n="plan_online_title">Consultoria Online</h3></div>
+            <div class="carousel-container">
+                <div class="carousel-track-manual" id="servicesOnline">
+                    
+                    <article class="plan-card glass-hover">
+                        <div class="plan-name">Consultoria Online</div>
+                        <div class="plan-price">R$ 150 <span data-i18n="per_month">/mês</span></div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> Montagem de treino</li>
+                            <li><i class="fas fa-check"></i> Acompanhamento</li>
+                            <li><i class="fas fa-check"></i> Treino via App Exclusivo</li>
+                            <li><i class="fas fa-check"></i> Suporte WhatsApp</li>
+                        </ul>
+                        <div class="plan-btn" data-i18n="btn_select">Selecionar</div>
+                    </article>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section aria-labelledby="presencial-title">
+            <div class="section-header"><h3 id="presencial-title" data-i18n="plan_presential_title">Atendimento Presencial</h3></div>
+            <div class="carousel-container">
+                <div class="carousel-track-manual" id="servicesPresencial">
+                    
+                    <article class="plan-card glass-hover" style="border-color: var(--brand-green-light);">
+                        <div class="plan-name">Plano Presencial</div>
+                        <div class="plan-price" data-i18n="price_custom">A Combinar</div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> <span data-i18n="feat_presential">Atendimento Presencial</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="feat_biomechanics">Correção Biomecânica</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="feat_motivation">Motivação Total</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="feat_gym">Academias & Condomínios</span></li>
+                        </ul>
+                        <div class="plan-btn" data-i18n="btn_select">Selecionar</div>
+                    </article>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section" aria-labelledby="faq-title">
+            <div class="section-header"><h3 id="faq-title" data-i18n="faq_title">Dúvidas Frequentes</h3></div>
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary class="faq-question"><span data-i18n="faq_q1">Como funciona a consultoria online?</span> <i class="fas fa-chevron-down"></i></summary>
+                    <div class="faq-answer" data-i18n="faq_a1">Você recebe seu treino detalhado por um aplicativo exclusivo, com vídeos explicativos e meu suporte direto pelo WhatsApp para ajustes e correções.</div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question"><span data-i18n="faq_q2">Serve para iniciantes?</span> <i class="fas fa-chevron-down"></i></summary>
+                    <div class="faq-answer" data-i18n="faq_a2">Com certeza! O planejamento é totalmente personalizado para o seu nível atual, respeitando suas limitações e evoluindo gradualmente.</div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question"><span data-i18n="faq_q3">Quanto tempo para ver resultados?</span> <i class="fas fa-chevron-down"></i></summary>
+                    <div class="faq-answer" data-i18n="faq_a3">Com adesão ao plano, alunos costumam notar mudanças visuais e de disposição já nas primeiras 4 a 6 semanas de treino consistente.</div>
+                </details>
+            </div>
+        </section>
+
+        <section aria-labelledby="agendamento-title">
+            <div class="section-header" style="margin-top: 30px;"><h3 id="agendamento-title">Agende sua Sessão</h3></div>
+            <div class="schedule-form">
+                <div class="form-group">
+                    <label class="form-label" for="clientName">Nome Completo *</label>
+                    <input type="text" id="clientName" class="form-input form-input-glass" placeholder="Digite seu nome">
+                </div>
+
+                <div class="form-row form-row-mobile">
+                    <div class="form-group"><label class="form-label" for="clientAge">Idade *</label><input type="number" id="clientAge" class="form-input form-input-glass" placeholder="Anos"></div>
+                    <div class="form-group"><label class="form-label" for="clientSex">Sexo *</label>
+                        <select id="clientSex" class="form-select form-input-glass">
+                            <option value="" disabled selected>Selecionar...</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row form-row-mobile">
+                    <div class="form-group"><label class="form-label" for="clientWeight">Peso (kg) *</label><input type="number" step="0.1" id="clientWeight" class="form-input form-input-glass" placeholder="Ex: 75.5"></div>
+                    <div class="form-group"><label class="form-label" for="clientHeight">Altura (cm) *</label><input type="number" id="clientHeight" class="form-input form-input-glass" placeholder="Ex: 175"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="clientProf">Profissão</label>
+                    <input type="text" id="clientProf" class="form-input form-input-glass" placeholder="Qual sua profissão?">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="clientRoutine">Rotina Diária (Horários)</label>
+                    <input type="text" id="clientRoutine" class="form-input form-input-glass" placeholder="Ex: Trabalho das 8h às 18h...">
+                </div>
+
+                <div class="form-group"><label class="form-label" for="clientLevel">Experiência *</label><select id="clientLevel" class="form-select form-input-glass"><option value="" disabled selected>Selecionar...</option><option value="Iniciante">Iniciante</option><option value="Intermediário">Intermediário</option><option value="Avançado">Avançado</option></select></div>
+
+                <div class="form-group"><label class="form-label" for="clientObjective">Objetivo Principal *</label><input type="text" id="clientObjective" class="form-input form-input-glass" placeholder="Ex: Emagrecimento, Hipertrofia..."></div>
+
+                <div class="form-group"><label class="form-label" for="serviceSelect">Plano Desejado *</label><select id="serviceSelect" class="form-select form-input-glass"><option value="" disabled selected>Selecionar...</option><option value="Consultoria Online">Consultoria Online</option><option value="Personal Presencial">Personal Presencial</option></select></div>
+                
+                <div class="form-row form-row-mobile">
+                    <div class="form-group"><label class="form-label" for="dateSelect">Data Preferida</label><input type="date" id="dateSelect" class="form-input form-input-glass"></div>
+                    <div class="form-group"><label class="form-label" for="timeSelect">Turno</label><select id="timeSelect" class="form-select form-input-glass">
+                        <option value="Manhã">Manhã</option>
+                        <option value="Tarde">Tarde</option>
+                        <option value="Noite">Noite</option>
+                    </select></div>
+                </div>
+
+                <div class="form-group"><label class="form-label" for="clientObs">Observação (Opcional)</label><textarea id="clientObs" class="form-input form-input-glass" rows="3" placeholder="Restrições médicas, dores, relato..." style="resize:vertical;"></textarea></div>
+
+                <button onclick="agendarWhatsApp()" class="btn-schedule"><i class="fab fa-whatsapp"></i> Enviar Pedido</button>
+            </div>
+        </section>
+
+        <a href="#clientName" class="cta-box-final">
+            <div class="cta-content">
+                <h2 class="cta-title" data-i18n="cta_title">Comece Hoje</h2>
+                <p class="cta-sub" data-i18n="cta_sub">O corpo que você quer começa na decisão que você toma agora.</p>
+                <div class="cta-btn-inner" data-i18n="cta_btn">QUERO TREINAR</div>
+            </div>
+        </a>
+
+        <footer class="footer">
+            <div class="footer-icons">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p>© 2026 JULIO CESAR.</p>
+        </footer>
+    </main>
+<script src="./js/script.js"></script>
+</body>
+</html>
