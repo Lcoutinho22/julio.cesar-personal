@@ -536,6 +536,55 @@ h2 {
   text-align: left;
 }
 
+/* --- SEÇÃO METODOLOGIA --- */
+.methodology-section {
+  margin-bottom: 30px;
+}
+.methodology-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.meth-item {
+  background: var(--btn-bg);
+  border: var(--border-style);
+  border-radius: 12px;
+  padding: 20px 15px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+.meth-item:hover {
+  background: rgba(212, 175, 55, 0.05);
+  border-color: var(--brand-primary);
+  transform: translateY(-3px);
+}
+.meth-icon {
+  font-size: 1.5rem;
+  color: var(--brand-primary);
+  filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.3));
+}
+.meth-item h4 {
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--text-main);
+  letter-spacing: 0.5px;
+}
+.meth-item p {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+@media (max-width: 480px) {
+    .methodology-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* --- FAQ (PERGUNTAS FREQUENTES) --- */
 .faq-item {
   background: var(--input-bg);

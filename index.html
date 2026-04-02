@@ -60,8 +60,8 @@
         </header>
 
         <nav class="action-grid">
-            <a href="https://wa.me/5551999999999" class="btn-action" aria-label="Falar no WhatsApp"><i class="fab fa-whatsapp"></i> <span data-i18n="btn_consulting">Consultoria</span></a>
-            <a href="#servicesTrack" class="btn-action" aria-label="Ver Planos"><i class="fas fa-dumbbell"></i> <span data-i18n="btn_plans">Planos</span></a>
+            <a href="https://wa.me/5549998365800" target="_blank" class="btn-action" aria-label="Falar no WhatsApp"><i class="fab fa-whatsapp"></i> <span data-i18n="btn_consulting">Consultoria</span></a>
+            <a href="#servicesOnline" class="btn-action" aria-label="Ver Planos"><i class="fas fa-dumbbell"></i> <span data-i18n="btn_plans">Planos</span></a>
         </nav>
 
         <section class="about-section reveal">
@@ -73,6 +73,32 @@
                 <p><strong>Treinamento Personalizado:</strong> Baseado em fisiologia e biomecânica.</p>
                 <p><strong>Consultoria Nutricional:</strong> Estratégias para hipertrofia e composição corporal.</p>
                 <p><strong>Performance:</strong> Evolução consistente com acompanhamento técnico.</p>
+            </div>
+        </section>
+
+        <section class="methodology-section reveal">
+            <div class="section-header"><h3 data-i18n="methodology_title">Metodologia JC</h3></div>
+            <div class="methodology-grid">
+                <div class="meth-item">
+                    <div class="meth-icon"><i class="fas fa-microscope"></i></div>
+                    <h4 data-i18n="meth_item1_title">Ciência Aplicada</h4>
+                    <p data-i18n="meth_item1_text">Protocolos baseados em biomecânica e fisiologia para máxima eficiência.</p>
+                </div>
+                <div class="meth-item">
+                    <div class="meth-icon"><i class="fas fa-user-check"></i></div>
+                    <h4 data-i18n="meth_item2_title">Acompanhamento 1:1</h4>
+                    <p data-i18n="meth_item2_text">Suporte contínuo para ajustes de carga, técnica e motivação constante.</p>
+                </div>
+                <div class="meth-item">
+                    <div class="meth-icon"><i class="fas fa-bullseye"></i></div>
+                    <h4 data-i18n="meth_item3_title">Foco em Resultados</h4>
+                    <p data-i18n="meth_item3_text">Estratégias validadas para emagrecimento, hipertrofia e performance.</p>
+                </div>
+                <div class="meth-item">
+                    <div class="meth-icon"><i class="fas fa-brain"></i></div>
+                    <h4 data-i18n="meth_item4_title">Mentalidade Blindada</h4>
+                    <p data-i18n="meth_item4_text">Desenvolvimento de disciplina e hábitos que sustentam sua transformação.</p>
+                </div>
             </div>
         </section>
 
@@ -90,7 +116,7 @@
                             <li><i class="fas fa-check"></i> Treino via App Exclusivo</li>
                             <li><i class="fas fa-check"></i> Suporte WhatsApp</li>
                         </ul>
-                        <div class="plan-btn" data-i18n="btn_select">Selecionar</div>
+                        <div class="plan-btn" onclick="selectPlan('Consultoria Online')" data-i18n="btn_select">Selecionar</div>
                     </article>
 
 
@@ -112,7 +138,7 @@
                             <li><i class="fas fa-check"></i> <span data-i18n="feat_biomechanics">Correção Biomecânica</span></li>
                             <li><i class="fas fa-check"></i> <span data-i18n="feat_motivation">Motivação Total</span></li>
                         </ul>
-                        <div class="plan-btn" data-i18n="btn_select">Selecionar</div>
+                        <div class="plan-btn" onclick="selectPlan('Plano Bronze')" data-i18n="btn_select">Selecionar</div>
                     </article>
 
                     <article class="plan-card glass-hover reveal" style="border-color: #c0c0c0;">
@@ -125,7 +151,7 @@
                             <li><i class="fas fa-check"></i> <span data-i18n="feat_biomechanics">Correção Biomecânica</span></li>
                             <li><i class="fas fa-check"></i> <span data-i18n="feat_motivation">Motivação Total</span></li>
                         </ul>
-                        <div class="plan-btn" data-i18n="btn_select">Selecionar</div>
+                        <div class="plan-btn" onclick="selectPlan('Plano Prata')" data-i18n="btn_select">Selecionar</div>
                     </article>
 
                     <article class="plan-card glass-hover reveal" style="border-color: #ffd700;">
@@ -139,7 +165,7 @@
                             <li><i class="fas fa-check"></i> <span data-i18n="feat_motivation">Motivação Total</span></li>
                             <li style="color: #ffd700;"><i class="fas fa-gift"></i> <strong style="color: #ffd700;">Plano Alimentar Grátis</strong></li>
                         </ul>
-                        <div class="plan-btn" data-i18n="btn_select">Selecionar</div>
+                        <div class="plan-btn" onclick="selectPlan('Plano Ouro')" data-i18n="btn_select">Selecionar</div>
                     </article>
 
                     <article class="plan-card glass-hover reveal" style="border-color: #9b59b6;">
@@ -153,7 +179,7 @@
                             <li><i class="fas fa-check"></i> <span data-i18n="feat_motivation">Motivação Total</span></li>
                             <li style="color: #9b59b6;"><i class="fas fa-gift"></i> <strong style="color: #9b59b6;">Plano Alimentar Grátis</strong></li>
                         </ul>
-                        <div class="plan-btn" data-i18n="btn_select">Selecionar</div>
+                        <div class="plan-btn" onclick="selectPlan('Plano Plus')" data-i18n="btn_select">Selecionar</div>
                     </article>
 
             </div>
@@ -242,9 +268,9 @@
 
         <footer class="footer">
             <div class="footer-icons">
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/personal.julio.cesar.silva/?hl=pt-br" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
+            <p style="margin-top:5px; opacity:0.5; font-size:0.7rem;">Desenvolvido pela <a href="https://www.instagram.com/coutinho.tech22/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Coutinho Tech</a></p>
             <p>© 2026 JULIO CESAR.</p>
         </footer>
     </main>

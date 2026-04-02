@@ -71,7 +71,18 @@ function toggleTheme() {
                 msg += `%0A*Observação:* ${obs}`;
             }
 
-            window.open(`https://wa.me/5551999999999?text=${msg}`, '_blank');
+            window.open(`https://wa.me/5549998365800?text=${msg}`, '_blank');
+        }
+
+        function selectPlan(plan) {
+            const servicoEl = document.getElementById('serviceSelect');
+            if (servicoEl) {
+                servicoEl.value = plan;
+            }
+            const formSection = document.getElementById('agendamento-title');
+            if (formSection) {
+                formSection.scrollIntoView({ behavior: 'smooth' });
+            }
         }
 
         function scrollTrack(elementId, dir) {
@@ -133,6 +144,15 @@ function toggleTheme() {
                 badge_weightloss: "EMAGRECIMENTO",
                 res_fernanda_desc: "Definição muscular.",
                 badge_hypertrophy: "HIPERTROFIA",
+                methodology_title: "Metodologia JC",
+                meth_item1_title: "Ciência Aplicada",
+                meth_item1_text: "Protocolos baseados em biomecânica e fisiologia para máxima eficiência.",
+                meth_item2_title: "Acompanhamento 1:1",
+                meth_item2_text: "Suporte contínuo para ajustes de carga, técnica e motivação constante.",
+                meth_item3_title: "Foco em Resultados",
+                meth_item3_text: "Estratégias validadas para emagrecimento, hipertrofia e performance.",
+                meth_item4_title: "Mentalidade Blindada",
+                meth_item4_text: "Desenvolvimento de disciplina e hábitos que sustentam sua transformação.",
                 plan_online_title: "Consultoria Online",
                 card_online_name: "Consultoria Online",
                 per_month: "/mês",
@@ -207,6 +227,15 @@ function toggleTheme() {
                 badge_weightloss: "WEIGHT LOSS",
                 res_fernanda_desc: "Muscle definition.",
                 badge_hypertrophy: "HYPERTROPHY",
+                methodology_title: "JC Methodology",
+                meth_item1_title: "Applied Science",
+                meth_item1_text: "Protocols based on biomechanics and physiology for maximum efficiency.",
+                meth_item2_title: "1:1 Coaching",
+                meth_item2_text: "Continuous support for load adjustments, technique, and constant motivation.",
+                meth_item3_title: "Results Focused",
+                meth_item3_text: "Validated strategies for weight loss, hypertrophy, and performance.",
+                meth_item4_title: "Mindset Building",
+                meth_item4_text: "Development of discipline and habits that sustain your transformation.",
                 plan_online_title: "Online Consulting",
                 card_online_name: "Online Consulting",
                 per_month: "/month",
@@ -281,6 +310,15 @@ function toggleTheme() {
                 badge_weightloss: "PÉRDIDA DE PESO",
                 res_fernanda_desc: "Definición muscular.",
                 badge_hypertrophy: "HIPERTROFIA",
+                methodology_title: "Metodología JC",
+                meth_item1_title: "Ciencia Aplicada",
+                meth_item1_text: "Protocolos basados en biomecânica y fisiología para máxima eficiencia.",
+                meth_item2_title: "Seguimiento 1:1",
+                meth_item2_text: "Soporte continuo para ajustes de carga, técnica y motivación constante.",
+                meth_item3_title: "Foco en Resultados",
+                meth_item3_text: "Estrategias validadas para pérdida de peso, hipertrofia y rendimiento.",
+                meth_item4_title: "Mentalidad Blindada",
+                meth_item4_text: "Desarrollo de disciplina y hábitos que sostienen tu transformación.",
                 plan_online_title: "Asesoría Online",
                 card_online_name: "Asesoría Online",
                 per_month: "/mes",
