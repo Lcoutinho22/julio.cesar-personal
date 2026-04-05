@@ -400,6 +400,35 @@ h2 {
   box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
 }
 
+/* --- PROMO BANNER --- */
+.promo-banner {
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px dashed var(--brand-primary);
+  color: var(--brand-primary);
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 10px auto 25px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: fit-content;
+  max-width: 90%;
+  animation: pulse 2.5s infinite ease-in-out;
+  cursor: default;
+}
+.promo-banner i {
+  font-size: 1.1rem;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.2); }
+  50% { transform: scale(1.02); box-shadow: 0 0 0 8px rgba(212, 175, 55, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+}
+
 .nav-btn {
   position: absolute;
   top: 50%;
